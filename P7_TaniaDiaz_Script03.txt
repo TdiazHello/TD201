@@ -1,0 +1,3 @@
+﻿"Afficher la liste des Groups"
+$nom = Read-Host "Merci de rentrer le nom de l'utilisateur"
+Get-ADUser "$nom" -Properties MemberOf | Select-Object MemberOf
